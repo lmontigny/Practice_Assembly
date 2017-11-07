@@ -4,21 +4,24 @@ mybyte2 db 9
 
 .code
 getASM proc
+	; Move
 	mov rax, 267
 	mov ecx, ebx
 	mov bl, mybyte ;move  from memory
 	mov mybyte, ch  ;move in memory
-
 	;mov mybyte, mybyte2 ;NO! mem to mem impossible
 
+	; Add
 	add rax, 7
 	add rax, rbx
 	;add rax, ebx ;NO! must be the same size
 
+	; Substract
 	mov rbx, 20
 	mov rcx, 7
 	sub rbx, rcx
 	
+	; Negative
 	mov rax, 89
 	neg rax
 	neg rax
