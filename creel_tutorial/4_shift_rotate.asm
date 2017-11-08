@@ -12,10 +12,10 @@ hello_from_asm proc
 
 	; Rotate
 	; Imagine the bits in a circle (bit 0 connected to bit 7)
-  rol al, 5
-  ror al, 5
-  rcl al, 5
-  rcr al, 5
+  	rol al, 5
+  	ror al, 5
+  	rcl al, 5
+  	rcr al, 5
 
 	ret
 hello_from_asm ENDP
